@@ -49,7 +49,7 @@ const addManager = () => {
         },
         {
             type: 'input',
-            name: 'officeNumber',
+            name: 'Number',
             message: "Enter the manager's office number",
             validate: nameInput => {
                 if  (isNaN(nameInput)) {
@@ -125,7 +125,7 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'github',
-            message: "Enter the employee's github username.",
+            message: "Enter the employee's github username",
             when: (input) => input.role === "Engineer",
             validate: nameInput => {
                 if (nameInput ) {
@@ -150,7 +150,7 @@ const addEmployee = () => {
         },
         {
             type: 'confirm',
-            name: 'confirmAddEmployee',
+            name: 'employee',
             message: 'Would you like to add more team members?',
             default: false
         }
